@@ -5,16 +5,16 @@ import javax.swing.ImageIcon;
 public class Bubble implements Markable {
 
 	private boolean _marked;
-	private Color _color;
+	private Colour _color;
 	private ImageIcon _view;
 	
-	public Bubble(Color ñolor) {
+	public Bubble(Colour ñolor) {
 		_color = ñolor;
 		java.net.URL url = Bubble.class.getResource("/images/" + _color.toString().toLowerCase() + "Bubble.png");
 		_view = new ImageIcon(url);
 	}
 	
-	public Color getStatus() {
+	public Colour getStatus() {
 		return _color;
 	}
 
